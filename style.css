@@ -25,11 +25,11 @@ a:active {
 }
 
 .carousel-control-prev-icon {
-  margin-left: -125px;
+  margin-left: -100px;
 }
 
 .carousel-control-next-icon {
-  margin-right: -125px;
+  margin-right: -100px;
 }
 
 .bg-form::after {
