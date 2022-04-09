@@ -29,6 +29,13 @@
     box-shadow: 10px 10px 20px !important;
 }
 
+.section-boxBlack{
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 20px;
+    box-shadow: 10px 10px 20px !important;
+    color: white;
+}
+
 .kotak1{
     height: 50px;
     width: 15px;
@@ -46,6 +53,36 @@
     /* position: absolute; */
     height: 20px;
     width: 1000px;
+    background-color: black;
+}
+
+.kotak4{
+    /* position: relative; */
+    height: 20px;
+    width: 900px;
+    background-color: black;
+}
+
+.kotak5{
+    position: absolute;
+    height: 70px;
+    width: 50px;
+    background-color: #AD8C32;
+    left: 50px;
+}
+
+.kotak6{
+    position: absolute;
+    height: 70px;
+    width: 50px;
+    background-color: #AD8C32;
+    left: 120px;
+}
+
+.kotak7{
+    position: relative;
+    height: 20px;
+    width: 900px;
     background-color: black;
 }
 
