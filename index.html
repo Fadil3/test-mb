@@ -33,6 +33,95 @@
 
   <body>
     <div class="container">
+      <div
+        class="row mt-5 bg-form flex-column flex-md-row justify-content-around align-items-center"
+      >
+        <div class="col-md-5">
+          <div
+            class="text-center p-2"
+            style="background-color: rgba(255, 255, 255, 0.8)"
+          >
+            <!-- logo -->
+            <div class="logo">
+              <img src="assets/MB_logo 1.svg" alt="logo" />
+            </div>
+            <p class="font-weight-bold">
+              PT. MEKAR BARU PROPERTI INDONESIA Jl. Jalan Raya Cirendeu No.107
+              Ciputat Timur, Tangsel (10 Menit Dari MRT Lebak Bulus)
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-md-5 text-white p-10"
+          style="background-image: linear-gradient(#ad8c32, #dcb64d)"
+        >
+          <h2 class="text-center font-weight-bold mt-2">Kontak Kami</h2>
+          <form
+            action="https://pesona.mbproperti.com/pakpos"
+            id="posts"
+            class="p-2 flex-column"
+            enctype="multipart/form-data"
+            method="post"
+            accept-charset="utf-8"
+          >
+            <input
+              type="hidden"
+              name="csrf_token"
+              value="e476c0a3633e3f6890cf1782f011832e"
+            />
+            <div class="form-group">
+              <label for="nama" class="font-weight-bold">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="font-weight-bold">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="telepon" class="font-weight-bold">Telepon</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="telepon"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="subjek" class="font-weight-bold">Subjek</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subjek"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group">
+              <label for="pesan" class="font-weight-bold">Pesan Anda</label>
+              <input
+                type="text"
+                class="form-control"
+                id="pesan"
+                placeholder="isi pesan anda disini"
+              />
+            </div>
+            <div class="mx-auto text-center py-3">
+              <button type="submit" class="btn btn-success">
+                <span class="font-weight-bold"> Kirim Pesan</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="section-full mobile-page-padding my-5" id="harga">
         <div class="container">
           <div class="section-content">

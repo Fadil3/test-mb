@@ -31,3 +31,17 @@ a:active {
 .carousel-control-next-icon {
   margin-right: -125px;
 }
+
+.bg-form::after {
+  content: '';
+  background-image: url(/assets/image/rumah9.jpeg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
