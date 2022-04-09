@@ -16,6 +16,13 @@
     background-size:cover;
 }
 
+.section-kontenTiga{
+    background-image: url(assets/image/bg5.jpg);
+    padding-top: 150px;
+    min-height: 1000px;
+    background-size:cover;
+}
+
 .section-boxWhite{
     background-color: #fff;
     padding: 20px;
