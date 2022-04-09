@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+.nav-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    
+}
 .section-kontenSatu{
     background-image: url(assets/image/bg1.jpg);
     padding-top: 250px;
