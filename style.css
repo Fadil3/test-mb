@@ -12,6 +12,45 @@
     color: #FFFFFF;
     
 }
+
+.section-headersatu{
+    background-image: url(assets/image/bg0.png);
+    /* padding-top: 250px;
+    min-height: 1217px; */
+    height: 667px;
+    background-size:cover; 
+}
+
+.text-1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68px;
+    /* line-height: 80px; */
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.text-2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 103px;
+    text-align: center;
+}
+
+.text-3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 45px;
+    text-align: center;
+}
+
+
 .section-kontenSatu{
     background-image: url(assets/image/bg1.jpg);
     padding-top: 250px;
