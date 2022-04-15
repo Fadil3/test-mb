@@ -93,9 +93,15 @@
     /* background-size:cover;  */
 } 
 
-.bg-headertiga{
+/* .bg1-headertiga{
+    background-image: url(assets/image/bg1.png);
+    background-size:cover;
+} */
+
+.bg2-headertiga{
     background-image: url(assets/image/bg2.png);
     background-size:cover;
+    width: 500px;
 }
 
 .section-headerempat{
@@ -134,10 +140,9 @@
 }
 
 .garis5{
-    width: 1375.03px;
-    height: 40.09px;
+    height: 1375.03px;
+    width: 10px;
     background-color: #AD8C32;
-    transform: rotate(-47.82deg);
 }
 
 .photo-1{
