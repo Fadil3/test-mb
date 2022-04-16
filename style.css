@@ -82,10 +82,17 @@
 .section-headerdua{
     min-height: 810px; 
 }
+@media only screen and (min-width : 500px) {
+    .containertiga{
+        max-width:100%;
+        padding:0;
+      }
+  }
+
 
 .section-headertiga{
-    background-image: url(assets/image/bg1.png);
-    background-repeat: repeat-x;
+    /* background-image: url(assets/image/bg1.png); */
+    /* background-repeat: repeat-x; */
     /* background-size: 40%; */
     /* padding-top: 250px;*/
     /* min-height: 1217px;  */
@@ -93,15 +100,16 @@
     /* background-size:cover;  */
 } 
 
-/* .bg1-headertiga{
+.bg1-headertiga{
     background-image: url(assets/image/bg1.png);
     background-size:cover;
-} */
+}
 
 .bg2-headertiga{
-    background-image: url(assets/image/bg2.png);
-    background-size:cover;
-    width: 500px;
+    background-image: url(assets/image/bg22.png);
+    background-size: cover;
+    width: 64px;
+    min-height: 720px;
 }
 
 .section-headerempat{
