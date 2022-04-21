@@ -110,7 +110,7 @@ a:active {
 }
 
 .text-8 {
-  font-weight: 4000;
+  font-weight: 400;
   font-size: 32px;
   line-height: 38px;
   text-align: center;
@@ -148,13 +148,7 @@ a:active {
   }
 }
 .section-headertiga {
-  /* background-image: url(assets/image/bg1.png); */
-  /* background-repeat: repeat-x; */
-  /* background-size: 40%; */
-  /* padding-top: 250px;*/
-  /* min-height: 1217px;  */
   min-height: 720px;
-  /* background-size:cover;  */
 }
 
 .bg1-headertiga {
@@ -208,6 +202,9 @@ a:active {
   background-color: #ad8c32;
 }
 
+.content-4{
+  height: 720px;
+}
 .photo-1 {
   position: absolute;
   width: 330px;
@@ -229,6 +226,60 @@ a:active {
   top: 352px;
 }
 
+@media only screen and (max-width: 600px) {
+  .text-1 {
+    font-size: 51px;
+  }
+  
+  .text-2 {
+    font-size: 68px;
+  }
+  
+  .text-3 {
+    font-size: 28px;
+  }
+  
+  .text-4 {
+    font-size: 42px;
+  }
+  
+  .text-5 {
+    font-size: 58px;
+  }
+  
+  .text-6 {
+    font-size: 26px;
+  }
+  .text-7 {
+    font-size: 32px;
+  }
+  
+  .text-8 {
+    font-size: 26px;
+  }
+
+  .photo-1 {
+    width: 250px;
+    left: 52px;
+    top:10px;
+  }
+  
+  .photo-2 {
+    width: 250px;
+    /* left: 0px; */
+    top: 125px;
+  }
+  
+  .photo-3 {
+    width: 250px;
+    left: 52px;
+    top: 250px;
+  }
+
+  .content-4{
+    height: 520px;
+  }
+}
 .section-kontenSatu {
   background-image: url(assets/image/bg1.jpg);
   padding: 80px;
@@ -276,7 +327,7 @@ a:active {
   /* position: relative; */
   height: 20px;
   width: 1300px;
-  background-color: black;
+  background-color: rgb(79, 48, 48);
 }
 
 .kotak3 {
@@ -289,7 +340,7 @@ a:active {
 .kotak4 {
   /* position: relative; */
   height: 20px;
-  width: 900px;
+  width: 70%;
   background-color: black;
 }
 
