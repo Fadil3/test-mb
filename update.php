@@ -1,7 +1,7 @@
 <?php
 include('dbconnection.php');
 ?>
-<form  method="POST">
+<form  method="POST" enctype='multipart/form-data'>
  <?php
 $id=$_GET['editid'];
 $ret=mysqli_query($db,"select * from image where id='$id'");
@@ -17,11 +17,12 @@ while ($row=mysqli_fetch_array($ret)) {
 </div>
  
 <div class="form-group">
-    <input type="text" class="form-control" name="contactno" value="<?php  echo $row['image'];?>" required="true" maxlength="10" pattern="[0-9]+">
+    <img src="assets/image/<?php  echo $row['image'];?>" alt="" height="200px" /> <br>
+    <!-- <input class="form-control" name="contactno" value="<?php  echo $row['image'];?>"  maxlength="10" > -->
     <input type='file' name='img_upload'><br><br>
     <input type='submit' name='img_submit'>
 </div>
-        
+<?php  $name_file =  $row['image'];?>       
 <?php 
 }?>
 <div class="form-group">
@@ -38,7 +39,7 @@ if(isset($_POST['img_submit'])){
     $check = getimagesize($_FILES["img_upload"]["tmp_name"]);
     if($check !== false) {
         echo "File is an image - " . $check["mime"] . ".";
-        move_uploaded_file($tmp_img_name,$folder."air.png");
+        move_uploaded_file($tmp_img_name,$folder.$name_file );
         $db->query("INSERT INTO image (tittle, image) VALUES ('Doe', '$img_name')");
     } else {
         echo "File is not an image.";
