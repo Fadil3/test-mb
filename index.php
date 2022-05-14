@@ -625,7 +625,7 @@ $i = 0;
     </div>
   </div>
 
-  <footer class="bg-dark text-white px-4">
+  <footer class="dark text-white px-4">
     <div class="row flex justify-content-around">
       <div class="col-lg-5 col-md-12 col-sm-12 text-center">
         <div class="mx-auto">
