@@ -36,7 +36,6 @@ $i = 0;
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
@@ -58,25 +57,25 @@ $i = 0;
       <div class="collapse navbar-collapse nav navbar-nav mx-auto" id="navbarText">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $text[$i++]; ?> </a>
+            <a class="nav-link" href="#tentang"><?php echo $text[$i++]; ?> </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $text[$i++]; ?> </a>
+            <a class="nav-link" href="#galeri"><?php echo $text[$i++]; ?> </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $text[$i++]; ?> </a>
+            <a class="nav-link" href="#daftarharga"><?php echo $text[$i++]; ?> </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $text[$i++]; ?></a>
+            <a class="nav-link" href="#promo"><?php echo $text[$i++]; ?></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $text[$i++]; ?> </a>
+            <a class="nav-link" href="#faq"><?php echo $text[$i++]; ?> </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $text[$i++]; ?> </a>
+            <a class="nav-link" href="#kontak"><?php echo $text[$i++]; ?> </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><?php echo $text[$i++]; ?> </a>
+            <a class="nav-link" href="#siteplan"><?php echo $text[$i++]; ?> </a>
           </li>
         </ul>
       </div>
@@ -250,7 +249,7 @@ $i = 0;
         <div class="col">
           <div class="d-flex justify-content-center align-items-center mt-5">
             <div class="kotak1"></div>
-            <h1 class="font-weight-bold p-4 py-5">GALERI</h1>
+            <h1 class="font-weight-bold p-4 py-5" id="galeri">GALERI</h1>
             <div class="kotak1"></div>
           </div>
 
@@ -320,26 +319,18 @@ $i = 0;
 
         <div class="col-lg-5 section-boxWhite shadow-lg text-right">
           <h1 class="font-weight-bold"><?php echo $text[$i++]; ?></h1>
-          <h6 class="py-2 font-weight-bold">
-            <?php echo $text[$i++]; ?>
-          </h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold">
-            <?php echo $text[$i++]; ?>
-          </h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold">
-            <?php echo $text[$i++]; ?>
-          </h6>
           <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
           <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
           <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
           <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
           <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold">
-            <?php echo $text[$i++]; ?>
-          </h6>
+          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
+          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
+          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
+          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
+          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
+          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
+          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
           <div class="text-center">
             <button type="button" class="btn btn-success mt-5 mb-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -362,7 +353,7 @@ $i = 0;
     </div>
     <br />
     <div class="kotak4"></div>
-    <div class="container">
+    <div class="container" id="promo">
       <div class="row d-flex justify-content-between">
         <div class="col-lg-6 pt-5 text-center">
           <h1>
@@ -395,7 +386,7 @@ $i = 0;
   </section>
 
   <!-- SECTION CONTENTG START -->
-  <div class="my-5 py-3" id="faqs">
+  <div class="my-5 py-3" id="faq">
     <div class="container">
       <div class="faq-1">
         <!-- TITLE START -->
@@ -533,7 +524,7 @@ $i = 0;
       </div>
     </div>
 
-    <div class="section-full mobile-page-padding my-5" id="harga">
+    <div class="section-full mobile-page-padding my-5" id="daftarharga">
       <div class="container">
         <div class="section-content">
           <div class="d-flex justify-content-center align-items-center mt-5">
@@ -576,7 +567,7 @@ $i = 0;
       </div>
     </div>
 
-    <div class="bg-form p-5">
+    <div class="bg-form p-5" id="kontak">
       <div class="row mt-5 flex-column flex-md-row justify-content-around align-items-center">
         <div class="col-md-4">
           <div class="text-center p-2" style="background-color: rgba(255, 255, 255, 0.8)">
@@ -626,7 +617,7 @@ $i = 0;
 
     <div class="row">
       <div class="col-md-8 mx-auto text-center my-5">
-        <h1 class="font-weight-bold">SITE PLAN</h1>
+        <h1 class="font-weight-bold" id="siteplan">SITE PLAN</h1>
         <img src="assets/image/siteplan.jpg" alt="" class="img-fluid" />
         <h3>Site Plan Pesona Azalea</h3>
         <p class="font-weight-normal">Pinggir Jalan Raya Utama</p>
