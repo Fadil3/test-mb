@@ -384,6 +384,12 @@ a:active {
   height: 400px;
 }
 
+@media screen and (max-width: 600px) {
+  .spasi {
+    height: 200px;
+  }
+}
+
 /* Carousel */
 .galeri {
   position: absolute;

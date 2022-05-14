@@ -225,7 +225,7 @@ $i = 0;
           </h6>
         </div>
 
-        <div class="col-lg-6 align-self-center pt-4 text-center">
+        <div class="col-lg-6 align-self-center pt-4 text-center" id="tentang">
           <div class="d-flex justify-content-end">
             <img src="assets/image/bg2.jpg" alt="" class="img-fluid" style="box-shadow: 10px 10px 20px !important" />
           </div>
