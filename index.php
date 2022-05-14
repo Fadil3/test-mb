@@ -49,7 +49,7 @@ $i = 0;
   <section class="section-headersatu">
     <nav class="navbar navbar-expand-lg navbar-dark main-nav" style="background-color: rgba(0, 0, 0, 0.5)">
       <a class="navbar-brand" href="#">
-        <img src="assets/image/MB_logo.png" alt="" height="90px" />
+        <img src="assets/image/MB_logo.png" alt="" height="50px" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -80,8 +80,8 @@ $i = 0;
         </ul>
       </div>
     </nav>
-    <center>
-      <p class="text-1"><?php echo $text[$i++]; ?></p>
+    <center class="mt-5">
+      <h1 class="text-1"><?php echo $text[$i++]; ?></h1>
       <h1 class="text-2"><?php echo $text[$i++]; ?></h1>
       <h1 class="text-2"><?php echo $text[$i++]; ?></h1>
       <p class="text-3">
