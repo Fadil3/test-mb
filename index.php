@@ -21,16 +21,22 @@ $i = 0;
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pesona.mbproperti.com/">
-  <meta property="og:title" content="Meta Tags — Preview, Edit and Generate">
+  <meta property="og:title" content="Rumah Dekat MRT | MB Properti">
   <meta property="og:description" content="Perusahaan yang bergerak bidang pembangunan dan penjualan cluster perumahan">
   <meta property="og:image" content="assets/MB_logo 1.svg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://pesona.mbproperti.com/">
-  <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate">
+  <meta property="twitter:title" content="Rumah Dekat MRT | MB Properti">
   <meta property="twitter:description" content="Perusahaan yang bergerak bidang pembangunan dan penjualan cluster perumahan">
   <meta property="twitter:image" content="assets/MB_logo 1.svg">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
