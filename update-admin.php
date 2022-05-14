@@ -10,7 +10,7 @@ include('dbconnection.php');
 
 <body>
     <center>
-        <h1>Update konten <?php echo $_GET['konten'] ?></h1>
+        <h1>Update <?php echo $_GET['konten'] ?></h1>
     </center>
     <form action="update-admin2.php" method="POST" enctype='multipart/form-data' class="px-5">
         <?php
@@ -31,7 +31,7 @@ include('dbconnection.php');
             while ($row = mysqli_fetch_array($ret)) { ?>
                 <td>
                     <div class="form-group">
-                        <label for="<?php echo $row['text'] ?>">link ke <?php echo $j++ ?></label>
+                        <label for="<?php echo $row['text'] ?>">Text ke-<?php echo $j++ ?></label>
 
                         <input class="form-control" type=" text" name="text[]" size="500" value="<?php echo $row['text'] ?>" id="<?php echo $row['text'] ?>">
                     </div>
