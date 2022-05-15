@@ -2,7 +2,7 @@
 <?php
 session_start();
 // print session login
-if (!isset($_SESSION['admin_email'])) {
+if (!isset($_SESSION['admin'])) {
   //set error message
   $_SESSION['error'] = "You must login first";
   //redirect to login page
