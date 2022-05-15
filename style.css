@@ -59,7 +59,7 @@ a:active {
 .section-headersatu {
   background-image: url(assets/image/bg0.png);
   /* padding-top: 250px;*/
-  min-height: 667px;
+  min-height: 500px;
   background-size: cover;
 }
 
@@ -123,7 +123,7 @@ a:active {
 }
 
 .section-headerdua {
-  min-height: 810px;
+  min-height: 400px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -213,7 +213,7 @@ a:active {
 }
 
 .content-4 {
-  height: 720px;
+  height: 520px;
 }
 
 .photo-1 {
@@ -295,7 +295,7 @@ a:active {
 
 .section-kontenSatu {
   background-image: url(assets/image/bg1.jpg);
-  padding: 80px;
+  padding: 10vw;
   max-height: 1400px;
   background-size: cover;
   margin-bottom: 20px;
@@ -319,7 +319,7 @@ a:active {
 
 .section-boxWhite {
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 10px 10px 20px !important;
 }
 

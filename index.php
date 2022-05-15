@@ -83,15 +83,12 @@ $i = 0;
         </ul>
       </div>
     </nav>
-    <center class="mt-5">
-      <h1 class="text-1"><?php echo $text[$i++]; ?></h1>
-      <h1 class="text-2"><?php echo $text[$i++]; ?></h1>
-      <h1 class="text-2"><?php echo $text[$i++]; ?></h1>
-      <p class="text-3">
-        <?php echo $text[$i++]; ?>
-      </p>
-    </center>
-    <br />
+    <!-- show konten-1 -->
+    <div class="mt-5">
+      <?php
+      echo $konten1["text"];
+      ?>
+    </div>
   </section>
 
   <section class="section-headerdua">
@@ -104,21 +101,11 @@ $i = 0;
     <br />
     <div class="garis3"></div>
 
-    <center>
-      <p class="text-4"><?php echo $text[$i++]; ?></p>
-      <h1 class="text-5"><?php echo $text[$i++]; ?></h1>
-      <br />
-      <h1 class="text-6">
-        <?php echo $text[$i++]; ?>
-      </h1>
-      <br />
-      <br />
-      <br />
-      <p class="text-7"><?php echo $text[$i++]; ?></p>
-      <p class="text-8">
-        <?php echo $text[$i++]; ?>
-      </p>
-      <button type="button" class="btn btn-success my-5" onclick={whatsapp()}>
+    <center class="mt-5">
+      <?php
+      echo $konten2["text"];
+      ?>
+      <button type="button" class="btn btn-success my-2" onclick={whatsapp()}>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
           <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
         </svg>
@@ -134,24 +121,17 @@ $i = 0;
       <div class="row">
         <div class="col-lg-6 col-lg text-center bg1-headertiga">
           <div class="section-boxWhite mx-auto mt-3 content-headertiga1">
-            <h1 class="font-weight-bold"><?php echo $text[$i++]; ?></h1>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
-            <h3 class="font-weight-bold">
-              <?php echo $text[$i++]; ?>
-            </h3>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
+            <?php
+            echo $konten3["text"];
+            ?>
           </div>
           <br />
         </div>
         <div class="col-lg-6 col-lg text-center bg2-headertiga">
           <div class="section-boxWhite mx-auto content-headertiga2">
-            <h1 class="font-weight-bold"><?php echo $text[$i++]; ?></h1>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
-            <h3 class="font-weight-bold"><?php echo $text[$i++]; ?></h3>
+            <?php
+            echo $konten3a["text"];
+            ?>
           </div>
           <br />
         </div>
@@ -162,29 +142,16 @@ $i = 0;
   <section class="section-headerempat">
     <div class="container">
       <div class="row">
-        <div class="col content-4">
+        <div class="col content-4 text-center">
           <img src="assets/image/cluster3.png" alt="" class="photo-3" />
           <img src="assets/image/cluster2.png" alt="" class="photo-2" />
-
           <img src="assets/image/cluster1.png" alt="" class="photo-1" />
         </div>
         <div class="col-lg pt-4 text-center">
-          <h1 style="font-weight: 500; font-size: 64px; line-height: 75px">
-            <?php echo $text[$i++]; ?>
-          </h1>
-          <h1 style="font-weight: 500; font-size: 64px; line-height: 75px">
-            <?php echo $text[$i++]; ?>
-          </h1>
-          <p style="font-weight: 400; font-size: 48px; line-height: 56px">
-            <?php echo $text[$i++]; ?>
-          </p>
-          <p style="font-weight: 400; font-size: 48px; line-height: 56px">
-            <?php echo $text[$i++]; ?>
-          </p>
-          <p style="font-weight: 400; font-size: 48px; line-height: 56px">
-            <?php echo $text[$i++]; ?>
-          </p>
-          <button type="button" class="btn btn-success my-5" onclick={whatsapp()}>
+          <?php
+          echo $konten4["text"];
+          ?>
+          <button type="button" class="btn btn-success my-3" onclick={whatsapp()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
               <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
             </svg>
@@ -199,33 +166,10 @@ $i = 0;
   <section class="section-kontenSatu">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 section-boxWhite shadow-lg">
-          <h1 class="font-weight-bold"><?php echo $text[$i++]; ?></h1>
-          <h6>
-            <?php echo $text[$i++]; ?>
-          </h6>
-          <h3 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h3>
-          <h5 class="font-w"><?php echo $text[$i++]; ?></h5>
-          <h6 class="font-weight-light pb-2">
-            <?php echo $text[$i++]; ?>
-
-          </h6>
-          <h5><?php echo $text[84]; ?></h5>
-          <h6 class="font-weight-light pb-2"><?php echo $text[$i++]; ?></h6>
-          <h5><?php echo $text[$i++]; ?></h5>
-          <h6 class="font-weight-light pb-2">
-            <?php echo $text[$i++]; ?>
-          </h6>
-          <h5><?php echo $text[$i++]; ?></h5>
-          <h6 class="font-weight-light pb-2"><?php echo $text[$i++]; ?></h6>
-          <h5><?php echo $text[$i++]; ?></h5>
-          <h6 class="font-weight-light pb-2">
-            <?php echo $text[$i++]; ?>
-          </h6>
-          <h5><?php echo $text[$i++]; ?></h5>
-          <h6 class="font-weight-light pb-2">
-            <?php echo $text[$i++]; ?>
-          </h6>
+        <div class="col-12 col-lg-6 section-boxWhite shadow-lg">
+          <?php
+          echo $konten5["text"];
+          ?>
         </div>
 
         <div class="col-lg-6 align-self-center pt-4 text-center" id="tentang">
@@ -321,19 +265,9 @@ $i = 0;
         </div>
 
         <div class="col-lg-5 section-boxWhite shadow-lg text-right">
-          <h1 class="font-weight-bold"><?php echo $text[$i++]; ?></h1>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
-          <h6 class="py-2 font-weight-bold"><?php echo $text[$i++]; ?></h6>
+          <?php
+          echo $konten6['text'];
+          ?>
           <div class="text-center">
             <button type="button" class="btn btn-success mt-5 mb-3" onclick={whatsapp()}>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -359,12 +293,9 @@ $i = 0;
     <div class="container" id="promo">
       <div class="row d-flex justify-content-between">
         <div class="col-lg-6 pt-5 text-center">
-          <h1>
-            <?php echo $text[$i++]; ?>
-          </h1>
-          <h5 class="font-italic text-danger">
-            <?php echo $text[$i++]; ?>
-          </h5>
+          <?php
+          echo $konten7['text'];
+          ?>
           <button type="button" class="btn btn-success mt-5 mb-3" onclick={whatsapp()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
               <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
