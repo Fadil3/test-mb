@@ -172,11 +172,11 @@ if (isset($_POST['submit'])) {
       $folder = '../../assets/image/';
       // $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
       $check = getimagesize($_FILES["image"]["tmp_name"][$i]);
-      $i++;
       if ($check !== false) {
         move_uploaded_file($tmp_img_name, $folder . $row['image']);
       }
     }
+    $i++;
   }
 
   if ($ret) {
