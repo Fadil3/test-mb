@@ -87,12 +87,13 @@ $row_img = mysqli_fetch_assoc($result_img);
       <?php
         } while ($row = mysqli_fetch_assoc($result));
       }else{ 
-        if($title == 'konten-7'){
-          echo "<textarea id=\"mytextarea\" name=\"content\">";
+        if($title == 'konten-7' || $title == 'footer' || $title == 'konten-3'){
+          echo "<textarea id=\"mytextarea\" name=\"content1\">";
           echo $row['text'];
           echo "</textarea>";
           $row = mysqli_fetch_assoc($result);
         }
+        if($title != 'konten-5a' ){
         ?>
           <textarea id="mytextarea" name="content">
         <?php
@@ -100,7 +101,7 @@ $row_img = mysqli_fetch_assoc($result_img);
           ?>
         </textarea>
       <?php
-      }?>
+      }}?>
       
       <!-- submit -->
       <center class="my-2">
@@ -123,11 +124,30 @@ $row_img = mysqli_fetch_assoc($result_img);
 <!-- update to db -->
 <?php
 if (isset($_POST['submit'])) {
-  $content = $_POST['content'];
-  $sql = "UPDATE text SET text='$content' WHERE tittle='$title'";
-  $result = mysqli_query($db, $sql);
+  
   $i = 0;
   $id = $title;
+
+  if(isset($_POST['content1'])){
+    $content1 = $_POST['content1'];
+    $content = $_POST['content'];
+
+    $ret=mysqli_query($db,"select * from text where tittle='$title'");
+    $row=mysqli_fetch_array($ret);
+    $temp = $row['id'];
+    $sql = "UPDATE text SET text='$content1' WHERE id='$temp'";
+    $result = mysqli_query($db, $sql);
+
+    $row=mysqli_fetch_array($ret);
+    $temp = $row['id'];
+    $sql = "UPDATE text SET text='$content' WHERE id='$temp'";
+    $result = mysqli_query($db, $sql);
+
+  }else{
+    $content = $_POST['content'];
+    $sql = "UPDATE text SET text='$content' WHERE tittle='$title'";
+    $result = mysqli_query($db, $sql);
+  }
 
   if(isset($_POST['text'])){
     $ret=mysqli_query($db,"select * from text where tittle='$title'");

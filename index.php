@@ -581,11 +581,8 @@ $i = 0;
       <!-- USEFUL LINKS -->
       <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
         <div class="flex-column justify-content-start">
-          <h5 class="font-weight-bold"><?php echo $text[$i++]; ?></h5>
-          <p>
-            <?php echo $text[$i++]; ?>
-          </p>
-          <p><?php echo $text[$i++]; ?></p>
+          <h5 class="font-weight-bold">MB Properti Office</h5>
+          <?php echo $footer[0]; ?>
           <div class="row flex justify-content-around">
             <div class="">
               <a href="<?php $i = 0; echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
@@ -607,9 +604,7 @@ $i = 0;
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
         <div class="flex-column justify-content-start">
-          <h5 class="font-weight-bold"><?php echo $text[$i++]; ?></h5>
-          <p><?php echo $text[$i++]; ?></p>
-          <p><?php echo $text[$i++]; ?></p>
+        <?php echo $footer[1]; ?>
         </div>
       </div>
     </div>

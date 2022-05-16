@@ -117,7 +117,7 @@ $i = 0;
           <tr>
             <th scope="row">2</th>
             <td>Konten-1</td>
-            <td>Thornton</td>
+            <td>Tampilan Utama dan Keunggulan</td>
             <td>
               <a class="btn btn-primary text-white" href="update-content.php?konten=konten-1" role="button">Edit</a>
             </td>
@@ -125,7 +125,7 @@ $i = 0;
           <tr>
             <th scope="row">3</th>
             <td>Konten-2</td>
-            <td>the Bird</td>
+            <td>Promo Bulan Ini</td>
             <td>
               <a class="btn btn-primary text-white" href="update-content.php?konten=konten-2" role="button">Edit</a>
             </td>
@@ -133,43 +133,43 @@ $i = 0;
           <tr>
             <th scope="row">4</th>
             <td>Konten-3</td>
-            <td>the Bird</td>
+            <td>Unit dan Fasilitas yang ditawarkan</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=konten-3" role="button">Edit</a></td>
           </tr>
           <tr>
             <th scope="row">5</th>
             <td>Konten-4</td>
-            <td>the Bird</td>
+            <td>Cluster-Cluster yang Tersedia</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=konten-4" role="button">Edit</a></td>
           </tr>
           <tr>
             <th scope="row">6</th>
             <td>Konten-5</td>
-            <td>the Bird</td>
+            <td>Mengapa Membeli Rumah Di Kami</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=konten-5" role="button">Edit</a></td>
           </tr>
           <tr>
-            <th scope="row">6</th>
+            <th scope="row">7</th>
             <td>Konten-5a</td>
-            <td>the Bird</td>
+            <td>Galeri</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=konten-5a" role="button">Edit</a></td>
           </tr>
           <tr>
-            <th scope="row">6</th>
+            <th scope="row">8</th>
             <td>youtube</td>
-            <td>the Bird</td>
+            <td>Link-link youtube di galeri</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=youtube" role="button">Edit</a></td>
           </tr>
           <tr>
             <th scope="row">7</th>
             <td>Konten-6</td>
-            <td>the Bird</td>
+            <td>SPESIFIKASI BANGUNAN</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=konten-6" role="button">Edit</a></td>
           </tr>
           <tr>
             <th scope="row">8</th>
             <td>Konten-7</td>
-            <td>the Bird</td>
+            <td>Dapatkan Promo PPKM Bulan Ini</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=konten-7" role="button">Edit</a></td>
           </tr>
           <tr>
@@ -183,16 +183,16 @@ $i = 0;
           <tr>
             <th scope="row">10</th>
             <td>Konten-8a</td>
-            <td>FAQ yang berisi pertanyaan dan jawaban yang sering ditanya konsumen</td>
+            <td>Daftar - Harga</td>
             <td>
               <a class="btn btn-primary text-white" href="update-content.php?konten=konten-8" role="button">Edit</a>
             </td>
           </tr>
           <tr>
             <th scope="row">11</th>
-            <td>Konten-8b</td>
-            <td>the Bird</td>
-            <td> <a class="btn btn-primary text-white" href="update-content.php?konten=navbar" role="button">Edit</a></td>
+            <td>Footer</td>
+            <td>text pada footer</td>
+            <td> <a class="btn btn-primary text-white" href="update-content.php?konten=footer" role="button">Edit</a></td>
           </tr>
           <tr>
             <th scope="row">12</th>
