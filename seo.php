@@ -71,7 +71,7 @@ $i = 0;
         </div>
       </div>
       <div class="mx-auto text-center my-3">
-        <a href="index-admin.php" class="btn btn-primary float-right text-white mb-5 text-center">Kembali ke home</a>
+        <a href="index-admin.php" class="btn btn-primary float-right text-white mb-5 text-center">Kembali</a>
       </div>
     </div>
 

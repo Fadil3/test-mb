@@ -158,7 +158,7 @@ $i = 0;
     <div class="row mx-auto">
       <div class="col-6 mx-auto text-center">
         <div class="d-flex justify-content-around">
-          <a href="index-admin.php" class="btn btn-success float-right text-white mb-5">Kembali ke home</a>
+          <a href="index-admin.php" class="btn btn-primary float-right text-white mb-5">Kembali</a>
         </div>
       </div>
     </div>

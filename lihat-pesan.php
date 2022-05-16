@@ -43,7 +43,7 @@ $i = 0;
   ?>
   <div class="container">
     <div class="d-flex justify-content-between">
-      <h1 class="mt-5">SEO</h1>
+      <h1 class="mt-5">Pesan dari pengunjung</h1>
     </div>
     <table class="table">
       <thead>
