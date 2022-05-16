@@ -23,6 +23,6 @@ if (isset($_POST)) {
   }
   var_dump($result);
   //redirect to index-admin.php
-  header('location: index-admin-2.php');
+  header('location: index-admin.php');
 }
 ?>
