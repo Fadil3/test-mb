@@ -228,7 +228,8 @@ $i = 0;
       </div>
       <div class="row justify-content-center mt-4">
         <div class="col-lg-3 col-md-3 mb-4">
-          <iframe src="<?php $i = 0; echo $yt[$i++]; ?>" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
+          <iframe src="<?php $i = 0;
+                        echo $yt[$i++]; ?>" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
         </div>
         <div class="col-lg-3 col-md-3 mb-4">
           <iframe src="<?php echo $yt[$i++]; ?>" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
@@ -306,8 +307,8 @@ $i = 0;
 
         <div class="col-lg-5 section-boxBlack shadow-lg text-center">
           <?php
-            $k7 = mysqli_fetch_array($konten7);
-            echo $k7['text'];
+          $k7 = mysqli_fetch_array($konten7);
+          echo $k7['text'];
           ?>
         </div>
       </div>
@@ -323,7 +324,8 @@ $i = 0;
       <div class="faq-1">
         <!-- TITLE START -->
         <div class="d-flex justify-content-center align-items-center mt-5">
-          <h1 class="font-weight-bold text-center py-3 p-4"><?php $i = 0; echo $faqs[$i++]; ?></h1>
+          <h1 class="font-weight-bold text-center py-3 p-4"><?php $i = 0;
+                                                            echo $faqs[$i++]; ?></h1>
           <div class="kotak1"></div>
         </div>
         <!-- TITLE END -->
@@ -515,7 +517,7 @@ $i = 0;
         </div>
         <div class="col-md-5 text-white p-10" style="background-image: linear-gradient(#ad8c32, #dcb64d)">
           <h2 class="text-center font-weight-bold mt-2">Kontak Kami</h2>
-          <form action="pesan.php" id="posts" class="p-2 flex-column" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+          <form action="pesan.php" id="posts" class="p-2 flex-column" method="post" accept-charset="utf-8">
             <input type="hidden" name="csrf_token" value="e476c0a3633e3f6890cf1782f011832e" />
             <div class="form-group">
               <label for="nama" class="font-weight-bold">Nama</label>
@@ -535,7 +537,7 @@ $i = 0;
             </div>
             <div class="form-group">
               <label for="pesan" class="font-weight-bold">Pesan Anda</label>
-              <input type="text" class="form-control" id="pesan" name='pesan'  placeholder="isi pesan anda disini" />
+              <input type="text" class="form-control" id="pesan" name='pesan' placeholder="isi pesan anda disini" />
             </div>
             <div class="mx-auto text-center py-3">
               <button type="submit" class="btn btn-success" name="submit">
@@ -588,7 +590,8 @@ $i = 0;
           <p><?php echo $text[$i++]; ?></p>
           <div class="row flex justify-content-around">
             <div class="">
-              <a href="<?php $i = 0; echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+              <a href="<?php $i = 0;
+                        echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
             </div>
             <div class="">
               <a href="<?php echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
@@ -607,9 +610,16 @@ $i = 0;
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
         <div class="flex-column justify-content-start">
-          <h5 class="font-weight-bold"><?php echo $text[$i++]; ?></h5>
-          <p><?php echo $text[$i++]; ?></p>
-          <p><?php echo $text[$i++]; ?></p>
+          <h5 class="font-weight-bold">
+            <?php $i = 0;
+            echo $text[$i++]; ?></h5>
+          <p>
+            <?php
+            echo $text[$i++]; ?>
+          </p>
+          <p>
+            <?php echo $text[$i++]; ?>
+          </p>
         </div>
       </div>
     </div>
