@@ -77,22 +77,28 @@ $row_img = mysqli_fetch_assoc($result_img);
       <?php $i++;
       }
       ?>
-      <?php if ($title == 'navbar' || $title == 'konten-8' || $title == 'youtube' || $title == 'sosmed'){
-          do {
-            ?>
-            <div class="form-group">
-            <label for="<?php echo $row['text'] ?>">Text ke-<?php echo $j++ ?></label>
-            <input class="form-control" type=" text" name="text[]" size="500" value="<?php echo $row['text'] ?>" id="<?php echo $row['text'] ?>">
-            </div>
-            <?php
-          } while ($row = mysqli_fetch_assoc($result));
-      }else{
+      <?php 
+      if ($title == 'navbar' || $title == 'konten-8' || $title == 'youtube' || $title == 'sosmed'){
+        do { ?>
+          <div class="form-group">
+          <label for="<?php echo $row['text'] ?>">Text ke-<?php echo $j++ ?></label>
+          <input class="form-control" type=" text" name="text[]" size="500" value="<?php echo $row['text'] ?>" id="<?php echo $row['text'] ?>">
+          </div>
+      <?php
+        } while ($row = mysqli_fetch_assoc($result));
+      }else{ 
+        if($title == 'konten-7'){
+          echo "<textarea id=\"mytextarea\" name=\"content\">";
+          echo $row['text'];
+          echo "</textarea>";
+          $row = mysqli_fetch_assoc($result);
+        }
         ?>
-        <textarea id="mytextarea" name="content">
+          <textarea id="mytextarea" name="content">
         <?php
         echo $row['text']
-        ?>
-      </textarea>
+          ?>
+        </textarea>
       <?php
       }?>
       

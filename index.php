@@ -294,7 +294,7 @@ $i = 0;
       <div class="row d-flex justify-content-between">
         <div class="col-lg-6 pt-5 text-center">
           <?php
-          echo $konten7['text'];
+          echo $k7['text'];
           ?>
           <button type="button" class="btn btn-success mt-5 mb-3" onclick={whatsapp()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -305,12 +305,10 @@ $i = 0;
         </div>
 
         <div class="col-lg-5 section-boxBlack shadow-lg text-center">
-          <h5 class="py-2" style="line-height: 1.5">
-            <?php echo $text[$i++]; ?>
-          </h5>
-          <h5 class="py-2" style="line-height: 1.5">
-            <?php echo $text[$i++]; ?>
-          </h5>
+          <?php
+            $k7 = mysqli_fetch_array($konten7);
+            echo $k7['text'];
+          ?>
         </div>
       </div>
     </div>
