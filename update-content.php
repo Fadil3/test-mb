@@ -70,38 +70,38 @@ $row_img = mysqli_fetch_assoc($result_img);
       $j = 1;
       while ($row_img = mysqli_fetch_array($ret)) { ?>
         <img src="assets/image/<?php echo $row_img['image']; ?>" alt="" height="200px" /> <br>
-        <div class="form-group">
+        <div class="form-group"> 
           <input type='file' name='image[]' id="image">
         </div>
         <br><br>
       <?php $i++;
       }
       ?>
-      <?php
-      if ($title == 'navbar' || $title == 'konten-8' || $title == 'youtube' || $title == 'sosmed') {
+      <?php 
+      if ($title == 'navbar' || $title == 'konten-8' || $title == 'youtube' || $title == 'sosmed'){
         do { ?>
           <div class="form-group">
-            <label for="<?php echo $row['text'] ?>"><?php echo $title ?> ke-<?php echo $j++ ?></label>
-            <input class="form-control" type=" text" name="text[]" size="500" value="<?php echo $row['text'] ?>" id="<?php echo $row['text'] ?>">
+          <label for="<?php echo $row['text'] ?>">Text ke-<?php echo $j++ ?></label>
+          <input class="form-control" type=" text" name="text[]" size="500" value="<?php echo $row['text'] ?>" id="<?php echo $row['text'] ?>">
           </div>
-        <?php
+      <?php
         } while ($row = mysqli_fetch_assoc($result));
-      } else {
-        if ($title == 'konten-7') {
+      }else{ 
+        if($title == 'konten-7'){
           echo "<textarea id=\"mytextarea\" name=\"content\">";
           echo $row['text'];
           echo "</textarea>";
           $row = mysqli_fetch_assoc($result);
         }
         ?>
-        <textarea id="mytextarea" name="content">
+          <textarea id="mytextarea" name="content">
         <?php
         echo $row['text']
-        ?>
+          ?>
         </textarea>
       <?php
-      } ?>
-
+      }?>
+      
       <!-- submit -->
       <center class="my-2">
         <input type="submit" name="submit" value="Submit" class="btn btn-primary" />
@@ -129,31 +129,31 @@ if (isset($_POST['submit'])) {
   $i = 0;
   $id = $title;
 
-  if (isset($_POST['text'])) {
-    $ret = mysqli_query($db, "select * from text where tittle='$title'");
-    while ($row = mysqli_fetch_array($ret)) {
+  if(isset($_POST['text'])){
+    $ret=mysqli_query($db,"select * from text where tittle='$title'");
+    while ($row=mysqli_fetch_array($ret)) { 
       $text = $_POST['text'][$i];
       $temp = $row['id'];
-      $query_mysql = mysqli_query($db, "UPDATE text SET text='$text' WHERE id='$temp'");
+      $query_mysql=mysqli_query($db,"UPDATE text SET text='$text' WHERE id='$temp'");
       $i++;
     }
     $i = 0;
   }
 
-  $ret = mysqli_query($db, "select * from image where tittle='$id'");
-  while ($row = mysqli_fetch_array($ret)) {
-    if (strlen($_FILES['image']['name'][$i]) > 0) {
-      $img_name = $_FILES['image']['name'][$i];
-      $tmp_img_name = $_FILES['image']['tmp_name'][$i];
-      $folder = 'assets/image/';
-      // $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-      $check = getimagesize($_FILES["image"]["tmp_name"][$i]);
-      $i++;
-      if ($check !== false) {
-        move_uploaded_file($tmp_img_name, $folder . $row['image']);
+  $ret=mysqli_query($db,"select * from image where tittle='$id'");
+    while ($row=mysqli_fetch_array($ret)) { 
+      if(strlen($_FILES['image']['name'][$i]) > 0){
+        $img_name=$_FILES['image']['name'][$i];
+        $tmp_img_name=$_FILES['image']['tmp_name'][$i];
+        $folder = 'assets/image/';
+                // $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        $check = getimagesize($_FILES["image"]["tmp_name"][$i]);
+        $i++;
+        if($check !== false) {
+          move_uploaded_file($tmp_img_name,$folder.$row['image'] );
+        } 
       }
     }
-  }
 
   if ($result) {
     $_SESSION['success'] = "Update success";
