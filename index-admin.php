@@ -51,7 +51,7 @@ $i = 0;
         <div class="col-12 mx-auto text-center">
           <div class="d-flex justify-content-around">
             <div class="card" style="width: 18rem; height:fit-content;">
-              <img src="/assets/image/pesan.jpg" class="card-img-top" alt="...">
+              <img src="assets/image/pesan.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Pesan dari pengunjung</h5>
                 <p class="card-text">Berisi pesan yang dikirim oleh pengunjung dari form kontak kami.</p>
@@ -59,7 +59,7 @@ $i = 0;
               </div>
             </div>
             <div class="card" style="width: 18rem; height:fit-content;">
-              <img src="/assets/image/seo-icon.png" class="card-img-top" alt="...">
+              <img src="assets/image/seo-icon.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">SEO</h5>
                 <p class="card-text">Berisi SEO yang digunakan untuk title, description, dan keywords</p>
@@ -67,7 +67,7 @@ $i = 0;
               </div>
             </div>
             <div class="card" style="width: 18rem; height:fit-content;">
-              <img src="/assets/image/content.webp" class="card-img-top" alt="..." style="object-fit: cover;">
+              <img src="assets/image/content.webp" class="card-img-top" alt="..." style="object-fit: cover;">
               <div class="card-body">
                 <h5 class="card-title">Konten</h5>
                 <p class="card-text">Berisi kontent yang ditampilkan di website</p>
