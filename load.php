@@ -41,3 +41,18 @@ $konten6 = mysqli_fetch_assoc($konten6);
 
 $konten7 = mysqli_query($db, "SELECT * FROM text where tittle='konten-7'");
 $konten7 = mysqli_fetch_assoc($konten7);
+
+$konten8 = mysqli_query($db, "SELECT * FROM text where tittle='konten-8'");
+while ($row = mysqli_fetch_array($konten8)) {
+    $faqs[] =  $row['text'];
+}
+
+$youtube = mysqli_query($db, "SELECT * FROM text where tittle='youtube'");
+while ($row = mysqli_fetch_array($youtube)) {
+    $yt[] =  $row['text'];
+}
+
+$temp = mysqli_query($db, "SELECT * FROM text where tittle='sosmed'");
+while ($row = mysqli_fetch_array($temp)) {
+    $sosmed[] =  $row['text'];
+}

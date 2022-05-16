@@ -75,6 +75,28 @@ $i = 0;
       </div>
 
       <table class="table">
+        <!-- <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nama Section</th>
+            <th scope="col">Deskripsi</th>
+            <th scope="col">Aksi</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Pesan</td>
+            <td>Melihat Pesan yang Dikirim Customer</td>
+            <td>
+              <a class="btn btn-primary text-white" href="lihat-pesan.php" role="button">Lihat</a>
+            </td>
+          </tr>
+           
+        </tbody>
+      </table>
+
+      <table class="table">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -133,6 +155,12 @@ $i = 0;
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=konten-5a" role="button">Edit</a></td>
           </tr>
           <tr>
+            <th scope="row">6</th>
+            <td>youtube</td>
+            <td>the Bird</td>
+            <td> <a class="btn btn-primary text-white" href="update-content.php?konten=youtube" role="button">Edit</a></td>
+          </tr>
+          <tr>
             <th scope="row">7</th>
             <td>Konten-6</td>
             <td>the Bird</td>
@@ -153,7 +181,7 @@ $i = 0;
             </td>
           </tr>
           <tr>
-            <th scope="row">9</th>
+            <th scope="row">10</th>
             <td>Konten-8a</td>
             <td>FAQ yang berisi pertanyaan dan jawaban yang sering ditanya konsumen</td>
             <td>
@@ -161,10 +189,16 @@ $i = 0;
             </td>
           </tr>
           <tr>
-            <th scope="row">10</th>
+            <th scope="row">11</th>
             <td>Konten-8b</td>
             <td>the Bird</td>
             <td> <a class="btn btn-primary text-white" href="update-content.php?konten=navbar" role="button">Edit</a></td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Sosmed</td>
+            <td>Link-link sosial media yang berada di footer</td>
+            <td> <a class="btn btn-primary text-white" href="update-content.php?konten=sosmed" role="button">Edit</a></td>
           </tr>
         </tbody>
       </table>
