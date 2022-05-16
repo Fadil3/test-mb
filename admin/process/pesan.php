@@ -17,9 +17,9 @@ if (isset($_POST['submit'])) {
 
   if ($result) {
     echo "<script>alert('Pesan anda telah terkirim');</script>";
-    echo "<script>location.href='index.php';</script>";
+    echo "<script>location.href='../../index.php';</script>";
   } else {
     echo "<script>alert('Pesan anda gagal terkirim');</script>";
-    echo "<script>location.href='index.php';</script>";
+    echo "<script>location.href='../../index.php';</script>";
   }
 }
