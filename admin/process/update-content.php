@@ -168,7 +168,8 @@ if (isset($_POST['submit'])) {
     if (strlen($_FILES['image']['name'][$i]) > 0) {
       $img_name = $_FILES['image']['name'][$i];
       $tmp_img_name = $_FILES['image']['tmp_name'][$i];
-      $folder = 'assets/image/';
+      // set folder to assets/image
+      $folder = '../../assets/image/';
       // $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
       $check = getimagesize($_FILES["image"]["tmp_name"][$i]);
       $i++;
@@ -178,7 +179,7 @@ if (isset($_POST['submit'])) {
     }
   }
 
-  if ($result) {
+  if ($ret) {
     $_SESSION['success'] = "Update success";
     header('location: /admin/process/update-content.php?konten=' . $title);
   } else {
