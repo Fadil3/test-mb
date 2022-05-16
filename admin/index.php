@@ -6,7 +6,7 @@ if (!isset($_SESSION['admin'])) {
   //set error message
   $_SESSION['error'] = "You must login first";
   //redirect to login page
-  header('location: login.php');
+  header('location: /admin/auth/login.php');
 }
 include('load.php');
 $i = 0;

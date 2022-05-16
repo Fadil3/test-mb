@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include('load.php');
+include('/admin/auth/load.php');
 $i = 0;
 ?>
 <html lang="id">
@@ -517,7 +517,7 @@ $i = 0;
         </div>
         <div class="col-md-5 text-white p-10" style="background-image: linear-gradient(#ad8c32, #dcb64d)">
           <h2 class="text-center font-weight-bold mt-2">Kontak Kami</h2>
-          <form action="pesan.php" id="posts" class="p-2 flex-column" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+          <form action="/admin/process/pesan.php" id="posts" class="p-2 flex-column" enctype="multipart/form-data" method="post" accept-charset="utf-8">
             <input type="hidden" name="csrf_token" value="e476c0a3633e3f6890cf1782f011832e" />
             <div class="form-group">
               <label for="nama" class="font-weight-bold">Nama</label>
