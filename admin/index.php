@@ -55,7 +55,7 @@ $i = 0;
               <div class="card-body">
                 <h5 class="card-title">Pesan dari pengunjung</h5>
                 <p class="card-text">Berisi pesan yang dikirim oleh pengunjung dari form kontak kami.</p>
-                <a class="btn btn-primary text-white" href="lihat-pesan.php" role="button">Lihat</a>
+                <a class="btn btn-primary text-white" href="admin/manage/lihat-pesan.php" role="button">Lihat</a>
               </div>
             </div>
             <div class="card" style="width: 18rem; height:fit-content;">
@@ -63,7 +63,7 @@ $i = 0;
               <div class="card-body">
                 <h5 class="card-title">SEO</h5>
                 <p class="card-text">Berisi SEO yang digunakan untuk title, description, dan keywords</p>
-                <a class="btn btn-success text-white" href="seo.php" role="button">Lihat</a>
+                <a class="btn btn-success text-white" href="admin/manage/seo.php" role="button">Lihat</a>
               </div>
             </div>
             <div class="card" style="width: 18rem; height:fit-content;">
@@ -71,7 +71,7 @@ $i = 0;
               <div class="card-body">
                 <h5 class="card-title">Konten</h5>
                 <p class="card-text">Berisi kontent yang ditampilkan di website</p>
-                <a class="btn btn-secondary text-white" href="konten.php" role="button">Lihat</a>
+                <a class="btn btn-secondary text-white" href="admin/manage/konten.php" role="button">Lihat</a>
               </div>
             </div>
 
@@ -84,7 +84,7 @@ $i = 0;
       <div class="row mx-auto">
         <div class="col-6 mx-auto text-center">
           <div class="d-flex justify-content-around">
-            <a href="logout.php" class="btn btn-danger float-right text-white mb-5">Logout</a>
+            <a href="/admin/auth/logout.php" class="btn btn-danger float-right text-white mb-5">Logout</a>
           </div>
         </div>
       </div>

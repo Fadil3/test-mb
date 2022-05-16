@@ -1,6 +1,6 @@
 <!-- handle submit -->
 <?php
-include('admin/db/dbconnection.php');
+include('../db/dbconnection.php');
 // start session
 session_start();
 if (isset($_POST)) {
@@ -23,6 +23,6 @@ if (isset($_POST)) {
   }
   var_dump($result);
   //redirect to index-admin.php
-  header('location: admin/index.php');
+  header('location: /admin/manage/seo.php');
 }
 ?>

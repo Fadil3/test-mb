@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin'])) {
   //redirect to login page
   header('location: admin/auth/login.php');
 }
-include('admin/db/load.php');
+include('../db/load.php');
 $i = 0;
 ?>
 <html lang="id">
@@ -61,7 +61,7 @@ $i = 0;
           <td>Navbar</td>
           <td>Logo pada navbar dan link</td>
           <td>
-            <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=navbar" role="button">Edit</a>
+            <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=navbar" role="button">Edit</a>
           </td>
         </tr>
         <tr>
@@ -69,7 +69,7 @@ $i = 0;
           <td>Konten-1</td>
           <td>Tampilan Utama dan Keunggulan</td>
           <td>
-            <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-1" role="button">Edit</a>
+            <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-1" role="button">Edit</a>
           </td>
         </tr>
         <tr>
@@ -77,57 +77,57 @@ $i = 0;
           <td>Konten-2</td>
           <td>Promo Bulan Ini</td>
           <td>
-            <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-2" role="button">Edit</a>
+            <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-2" role="button">Edit</a>
           </td>
         </tr>
         <tr>
           <th scope="row">4</th>
           <td>Konten-3</td>
           <td>Unit dan Fasilitas yang ditawarkan</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-3" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-3" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">5</th>
           <td>Konten-4</td>
           <td>Cluster-Cluster yang Tersedia</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-4" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-4" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">6</th>
           <td>Konten-5</td>
           <td>Mengapa Membeli Rumah Di Kami</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-5" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-5" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">7</th>
           <td>Konten-5a</td>
           <td>Galeri</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-5a" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-5a" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">8</th>
           <td>youtube</td>
           <td>Link-link youtube di galeri</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=youtube" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=youtube" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">7</th>
           <td>Konten-6</td>
           <td>SPESIFIKASI BANGUNAN</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-6" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-6" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">8</th>
           <td>Konten-7</td>
           <td>Dapatkan Promo PPKM Bulan Ini</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-7" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-7" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">9</th>
           <td>Konten-8</td>
           <td>FAQ yang berisi pertanyaan dan jawaban yang sering ditanya konsumen</td>
           <td>
-            <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-8" role="button">Edit</a>
+            <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-8" role="button">Edit</a>
           </td>
         </tr>
         <tr>
@@ -135,20 +135,20 @@ $i = 0;
           <td>Konten-8a</td>
           <td>Daftar - Harga</td>
           <td>
-            <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=konten-8" role="button">Edit</a>
+            <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-8" role="button">Edit</a>
           </td>
         </tr>
         <tr>
           <th scope="row">11</th>
           <td>Footer</td>
           <td>text pada footer</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=footer" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=footer" role="button">Edit</a></td>
         </tr>
         <tr>
           <th scope="row">12</th>
           <td>Sosmed</td>
           <td>Link-link sosial media yang berada di footer</td>
-          <td> <a class="btn btn-primary text-white" href="admin/process/update-content.php?konten=sosmed" role="button">Edit</a></td>
+          <td> <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=sosmed" role="button">Edit</a></td>
         </tr>
       </tbody>
     </table>
@@ -158,7 +158,7 @@ $i = 0;
     <div class="row mx-auto">
       <div class="col-6 mx-auto text-center">
         <div class="d-flex justify-content-around">
-          <a href="admin/index.php" class="btn btn-primary float-right text-white mb-5">Kembali</a>
+          <a href="/admin" class="btn btn-primary float-right text-white mb-5">Kembali</a>
         </div>
       </div>
     </div>

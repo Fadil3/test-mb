@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin'])) {
 }
 
 // connect to database
-include('admin/db/dbconnection.php');
+include('../db/dbconnection.php');
 
 // get parameter konten
 $title = $_GET['konten'];
@@ -69,7 +69,7 @@ $row_img = mysqli_fetch_assoc($result_img);
       $i = 0;
       $j = 1;
       while ($row_img = mysqli_fetch_array($ret)) { ?>
-        <img src="assets/image/<?php echo $row_img['image']; ?>" alt="" height="200px" /> <br>
+        <img src="../../assets/image/<?php echo $row_img['image']; ?>" alt="" height="200px" /> <br>
         <div class="form-group">
           <input type='file' name='image[]' id="image">
         </div>
@@ -106,7 +106,10 @@ $row_img = mysqli_fetch_assoc($result_img);
 
       <!-- submit -->
       <center class="my-2">
-        <input type="submit" name="submit" value="Submit" class="btn btn-primary" />
+        <input type="submit" name="submit" value="Submit" class="btn btn-success" />
+        <br>
+        <br>
+        <a href="../manage/konten.php" class="btn btn-primary">Kembali</a>
       </center>
     </form>
 
@@ -177,9 +180,9 @@ if (isset($_POST['submit'])) {
 
   if ($result) {
     $_SESSION['success'] = "Update success";
-    header('location: admin/process/update-content.php?konten=' . $title);
+    header('location: /admin/process/update-content.php?konten=' . $title);
   } else {
     $_SESSION['error'] = "Update failed";
-    header('location: admin/process/update-content.php?konten=' . $title);
+    header('location: /admin/process/update-content.php?konten=' . $title);
   }
 }

@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin'])) {
   //redirect to login page
   header('location: admin/auth/login.php');
 }
-include('admin/auth/load.php');
+include('../db/load.php');
 $i = 0;
 ?>
 <html lang="id">
@@ -50,7 +50,7 @@ $i = 0;
       <div class="col-md-12">
         <div class="card">
           <div class="card-body">
-            <form action="admin/process/update-seo.php" method="post">
+            <form action="/admin/process/update-seo.php" method="post">
               <div class="form-group">
                 <label for="exampleFormControlTextarea1"><b>Title</b></label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="title" required><?php echo $seo['title']; ?></textarea>
@@ -71,7 +71,7 @@ $i = 0;
         </div>
       </div>
       <div class="mx-auto text-center my-3">
-        <a href="admin/index.php" class="btn btn-primary float-right text-white mb-5 text-center">Kembali</a>
+        <a href="/admin" class="btn btn-primary float-right text-white mb-5 text-center">Kembali</a>
       </div>
     </div>
 

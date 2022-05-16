@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin'])) {
   //redirect to login page
   header('location: admin/auth/login.php');
 }
-include('admin/db/load.php');
+include('../db/load.php');
 $i = 0;
 ?>
 <html lang="id">
@@ -75,7 +75,7 @@ $i = 0;
       </tbody>
     </table>
 
-    <a href="admin/index.php" class="btn btn-primary float-right text-white mb-5">Kembali</a>
+    <a href="/admin" class="btn btn-primary float-right text-white mb-5">Kembali</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
