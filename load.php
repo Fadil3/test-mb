@@ -42,9 +42,6 @@ $konten6 = mysqli_fetch_assoc($konten6);
 $konten7 = mysqli_query($db, "SELECT * FROM text where tittle='konten-7'");
 $k7 = mysqli_fetch_array($konten7);
 
-$konten7a = mysqli_query($db, "SELECT * FROM text where tittle='konten-7a'");
-$k7a = mysqli_fetch_array($konten7a);
-
 $konten8 = mysqli_query($db, "SELECT * FROM text where tittle='konten-8'");
 while ($row = mysqli_fetch_array($konten8)) {
     $faqs[] =  $row['text'];
