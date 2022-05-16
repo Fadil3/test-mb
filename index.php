@@ -307,8 +307,7 @@ $i = 0;
 
         <div class="col-lg-5 section-boxBlack shadow-lg text-center">
           <?php
-          $k7 = mysqli_fetch_array($konten7);
-          echo $k7['text'];
+          echo $k7a['text'];
           ?>
         </div>
       </div>
