@@ -1,6 +1,6 @@
 <?php
 
-include('admin/db/dbconnection.php');
+include('../db/dbconnection.php');
 
 if (isset($_POST['submit'])) {
   //set error message
