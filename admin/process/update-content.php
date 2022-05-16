@@ -6,11 +6,11 @@ if (!isset($_SESSION['admin'])) {
   //set error message
   $_SESSION['error'] = "You must login first";
   //redirect to login page
-  header('location: /auth/login.php');
+  header('location: admin/auth/login.php');
 }
 
 // connect to database
-include('dbconnection.php');
+include('admin/db/dbconnection.php');
 
 // get parameter konten
 $title = $_GET['konten'];
@@ -177,9 +177,9 @@ if (isset($_POST['submit'])) {
 
   if ($result) {
     $_SESSION['success'] = "Update success";
-    header('location: update-content.php?konten=' . $title);
+    header('location: admin/process/update-content.php?konten=' . $title);
   } else {
     $_SESSION['error'] = "Update failed";
-    header('location: update-content.php?konten=' . $title);
+    header('location: admin/process/update-content.php?konten=' . $title);
   }
 }

@@ -6,9 +6,9 @@ if (!isset($_SESSION['admin'])) {
   //set error message
   $_SESSION['error'] = "You must login first";
   //redirect to login page
-  header('location: login.php');
+  header('location: admin/auth/login.php');
 }
-include('load.php');
+include('admin/db/load.php');
 $i = 0;
 ?>
 <html lang="id">
@@ -75,7 +75,7 @@ $i = 0;
       </tbody>
     </table>
 
-    <a href="index-admin.php" class="btn btn-primary float-right text-white mb-5">Kembali</a>
+    <a href="admin/index.php" class="btn btn-primary float-right text-white mb-5">Kembali</a>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
