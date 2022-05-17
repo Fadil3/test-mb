@@ -135,7 +135,7 @@ $i = 0;
           <td>Konten-8a</td>
           <td>Daftar - Harga</td>
           <td>
-            <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-8" role="button">Edit</a>
+            <a class="btn btn-primary text-white" href="/admin/process/update-content.php?konten=konten-8a" role="button">Edit</a>
           </td>
         </tr>
         <tr>
