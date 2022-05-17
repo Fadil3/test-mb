@@ -4,9 +4,8 @@ session_start();
 
 //  check if user is logged in
 if (isset($_SESSION['admin'])) {
-  header('location: /admin/');
+  header('location: /admin');
 }
-
 // handle form login
 if (isset($_POST['submit'])) {
   // get email and password
