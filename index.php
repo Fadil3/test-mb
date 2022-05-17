@@ -112,6 +112,7 @@ $i = 0;
         Miliki Sekarang
       </button>
     </center>
+    <br>
     <div class="garis4"></div>
     <!-- <br> -->
   </section>
