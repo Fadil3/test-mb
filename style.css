@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 /* reset css */
 body {
   margin: 0;
@@ -37,7 +42,7 @@ a:active {
 }
 
 .bg-form {
-  background-image: url(/assets/image/rumah9.jpeg);
+  background-image: url(assets/image/rumah9.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -54,7 +59,7 @@ a:active {
 .section-headersatu {
   background-image: url(assets/image/bg0.png);
   /* padding-top: 250px;*/
-  min-height: 667px;
+  min-height: 500px;
   background-size: cover;
 }
 
@@ -103,6 +108,7 @@ a:active {
   font-size: 32px;
   line-height: 38px;
 }
+
 .text-7 {
   font-weight: 500;
   font-size: 40px;
@@ -117,8 +123,9 @@ a:active {
 }
 
 .section-headerdua {
-  min-height: 810px;
+  min-height: 400px;
 }
+
 @media only screen and (min-width: 500px) {
   .containertiga {
     max-width: 100%;
@@ -136,6 +143,7 @@ a:active {
 }
 
 @media only screen and (max-width: 800px) {
+
   .content-headertiga1,
   .content-headertiga2 {
     width: 80%;
@@ -147,14 +155,9 @@ a:active {
     margin-top: 10%;
   }
 }
+
 .section-headertiga {
-  /* background-image: url(assets/image/bg1.png); */
-  /* background-repeat: repeat-x; */
-  /* background-size: 40%; */
-  /* padding-top: 250px;*/
-  /* min-height: 1217px;  */
   min-height: 720px;
-  /* background-size:cover;  */
 }
 
 .bg1-headertiga {
@@ -194,6 +197,7 @@ a:active {
   margin-right: 1%;
   background-color: black;
 }
+
 .garis4 {
   height: 15px;
   margin-left: 10%;
@@ -206,6 +210,10 @@ a:active {
   height: 1375.03px;
   width: 10px;
   background-color: #ad8c32;
+}
+
+.content-4 {
+  height: 520px;
 }
 
 .photo-1 {
@@ -229,16 +237,72 @@ a:active {
   top: 352px;
 }
 
+@media only screen and (max-width: 600px) {
+  .text-1 {
+    font-size: 51px;
+  }
+
+  .text-2 {
+    font-size: 68px;
+  }
+
+  .text-3 {
+    font-size: 28px;
+  }
+
+  .text-4 {
+    font-size: 42px;
+  }
+
+  .text-5 {
+    font-size: 58px;
+  }
+
+  .text-6 {
+    font-size: 26px;
+  }
+
+  .text-7 {
+    font-size: 32px;
+  }
+
+  .text-8 {
+    font-size: 26px;
+  }
+
+  .photo-1 {
+    width: 250px;
+    left: 52px;
+    top: 10px;
+  }
+
+  .photo-2 {
+    width: 250px;
+    /* left: 0px; */
+    top: 125px;
+  }
+
+  .photo-3 {
+    width: 250px;
+    left: 52px;
+    top: 250px;
+  }
+
+  .content-4 {
+    height: 520px;
+  }
+}
+
 .section-kontenSatu {
   background-image: url(assets/image/bg1.jpg);
-  padding: 80px;
+  padding: 10vw;
   max-height: 1400px;
   background-size: cover;
   margin-bottom: 20px;
 }
 
 .section-kontenDua {
-  background-image: url(assets/image/bg3.jpg);
+  /* background-image: url(assets/image/bg3.jpg); */
   padding: 80px;
   max-height: 1400px;
   background-size: cover;
@@ -255,7 +319,7 @@ a:active {
 
 .section-boxWhite {
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 10px 10px 20px !important;
 }
 
@@ -289,7 +353,7 @@ a:active {
 .kotak4 {
   /* position: relative; */
   height: 20px;
-  width: 900px;
+  width: 70%;
   background-color: black;
 }
 
@@ -320,6 +384,12 @@ a:active {
   height: 400px;
 }
 
+@media screen and (max-width: 600px) {
+  .spasi {
+    height: 200px;
+  }
+}
+
 /* Carousel */
 .galeri {
   position: absolute;
@@ -342,27 +412,32 @@ input[type='radio'] {
   object-fit: cover;
 }
 
-#item-1:checked ~ .galeris #song-3,
-#item-2:checked ~ .galeris #song-1,
-#item-3:checked ~ .galeris #song-2 {
+#item-1:checked~.galeris #song-3,
+#item-2:checked~.galeris #song-1,
+#item-3:checked~.galeris #song-2 {
   transform: translatex(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked ~ .galeris #song-2,
-#item-2:checked ~ .galeris #song-3,
-#item-3:checked ~ .galeris #song-1 {
+#item-1:checked~.galeris #song-2,
+#item-2:checked~.galeris #song-3,
+#item-3:checked~.galeris #song-1 {
   transform: translatex(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked ~ .galeris #song-1,
-#item-2:checked ~ .galeris #song-2,
-#item-3:checked ~ .galeris #song-3 {
+#item-1:checked~.galeris #song-1,
+#item-2:checked~.galeris #song-2,
+#item-3:checked~.galeris #song-3 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
+
 /* Carousel */
+
+.dark {
+  background-color: black;
+}
