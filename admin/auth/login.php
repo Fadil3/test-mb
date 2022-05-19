@@ -1,12 +1,11 @@
 <?php
-include('dbconnection.php');
+include('../db/dbconnection.php');
 session_start();
 
 //  check if user is logged in
-if (isset($_SESSION['admin_email'])) {
-  header('location:index-admin.php');
+if (isset($_SESSION['admin'])) {
+  header('location: /admin');
 }
-
 // handle form login
 if (isset($_POST['submit'])) {
   // get email and password
@@ -35,7 +34,7 @@ if (isset($_POST['submit'])) {
           // set session
           $_SESSION['admin'] = $row['id'];
           // redirect to dashboard
-          header('location: index-admin.php');
+          header('location: /admin');
         }
       }
     }
@@ -66,8 +65,8 @@ if (isset($_POST['submit'])) {
       <div class="container">
         <div class="row row-padding justify-content-center">
           <div class="col-md-4 text-center">
-            <form class="form-signin" method="POST" action="login.php">
-              <img src="/assets/MB_logo 1.svg" alt="logo">
+            <form class="form-signin" method="POST">
+              <img src="../../assets/MB_logo 1.svg" alt="logo">
               <h1 class="font-weight-bold mb-5">Admin Panel</h1>
               <div class="form-group input-group">
                 <div class="input-group-prepend">

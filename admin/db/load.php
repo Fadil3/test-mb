@@ -24,11 +24,11 @@ $konten1 = mysqli_fetch_assoc($konten1);
 $konten2 = mysqli_query($db, "SELECT * FROM text where tittle='konten-2'");
 $konten2 = mysqli_fetch_assoc($konten2);
 
-$konten3 = mysqli_query($db, "SELECT * FROM text where tittle='konten-3'");
-$konten3 = mysqli_fetch_assoc($konten3);
+$k3 = mysqli_query($db, "SELECT * FROM text where tittle='konten-3'");
+$konten3 = mysqli_fetch_array($k3);
 
-$konten3a = mysqli_query($db, "SELECT * FROM text where tittle='konten-3a'");
-$konten3a = mysqli_fetch_assoc($konten3a);
+// $konten3a = mysqli_query($db, "SELECT * FROM text where tittle='konten-3a'");
+$konten3a = mysqli_fetch_array($k3);
 
 $konten4 = mysqli_query($db, "SELECT * FROM text where tittle='konten-4'");
 $konten4 = mysqli_fetch_assoc($konten4);
@@ -40,4 +40,24 @@ $konten6 = mysqli_query($db, "SELECT * FROM text where tittle='konten-6'");
 $konten6 = mysqli_fetch_assoc($konten6);
 
 $konten7 = mysqli_query($db, "SELECT * FROM text where tittle='konten-7'");
-$konten7 = mysqli_fetch_assoc($konten7);
+$k7 = mysqli_fetch_array($konten7);
+
+$konten8 = mysqli_query($db, "SELECT * FROM text where tittle='konten-8'");
+while ($row = mysqli_fetch_array($konten8)) {
+    $faqs[] =  $row['text'];
+}
+
+$youtube = mysqli_query($db, "SELECT * FROM text where tittle='youtube'");
+while ($row = mysqli_fetch_array($youtube)) {
+    $yt[] =  $row['text'];
+}
+
+$temp = mysqli_query($db, "SELECT * FROM text where tittle='sosmed'");
+while ($row = mysqli_fetch_array($temp)) {
+    $sosmed[] =  $row['text'];
+}
+
+$temp = mysqli_query($db, "SELECT * FROM text where tittle='footer'");
+while ($row = mysqli_fetch_array($temp)) {
+    $footer[] =  $row['text'];
+}

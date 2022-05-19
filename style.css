@@ -42,7 +42,7 @@ a:active {
 }
 
 .bg-form {
-  background-image: url(/assets/image/rumah9.jpeg);
+  background-image: url(assets/image/rumah9.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -340,7 +340,7 @@ a:active {
   /* position: relative; */
   height: 20px;
   width: 1300px;
-  background-color: rgb(79, 48, 48);
+  background-color: black;
 }
 
 .kotak3 {

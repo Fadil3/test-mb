@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include('load.php');
+include('admin/db/load.php');
 $i = 0;
 ?>
 <html lang="id">
@@ -38,7 +38,7 @@ $i = 0;
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon//favicon-16x16.png">
 
   <!-- title html -->
-  <title>Rumah Dekat MRT | MB Properti</title>
+  <title><?php echo $seo["title"]; ?></title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
@@ -84,7 +84,7 @@ $i = 0;
       </div>
     </nav>
     <!-- show konten-1 -->
-    <div class="mt-5">
+    <div class="mt-5 py-3">
       <?php
       echo $konten1["text"];
       ?>
@@ -112,6 +112,7 @@ $i = 0;
         Miliki Sekarang
       </button>
     </center>
+    <br>
     <div class="garis4"></div>
     <!-- <br> -->
   </section>
@@ -228,16 +229,17 @@ $i = 0;
       </div>
       <div class="row justify-content-center mt-4">
         <div class="col-lg-3 col-md-3 mb-4">
-          <iframe src="https://www.youtube.com/embed/bnBsBRRA93A" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
+          <iframe src="<?php $i = 0;
+                        echo $yt[$i++]; ?>" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
         </div>
         <div class="col-lg-3 col-md-3 mb-4">
-          <iframe src="https://www.youtube.com/embed/Z-Il0vxzTQk" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
+          <iframe src="<?php echo $yt[$i++]; ?>" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
         </div>
         <div class="col-lg-3 col-md-3 mb-4">
-          <iframe src="https://www.youtube.com/embed/reQhUwYMDQ4" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
+          <iframe src="<?php echo $yt[$i++]; ?>" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
         </div>
         <div class="col-lg-3 col-md-3 mb-4">
-          <iframe src="https://www.youtube.com/embed/7PeznlVg_o4" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
+          <iframe src="<?php echo $yt[$i++]; ?>" width="100%" height="150" frameborder="0" allowfullscreen class="bisnis"></iframe>
         </div>
         <div class="col d-flex justify-content-center">
           <div class="kotak3"></div>
@@ -294,7 +296,7 @@ $i = 0;
       <div class="row d-flex justify-content-between">
         <div class="col-lg-6 pt-5 text-center">
           <?php
-          echo $konten7['text'];
+          echo $k7['text'];
           ?>
           <button type="button" class="btn btn-success mt-5 mb-3" onclick={whatsapp()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -305,12 +307,10 @@ $i = 0;
         </div>
 
         <div class="col-lg-5 section-boxBlack shadow-lg text-center">
-          <h5 class="py-2" style="line-height: 1.5">
-            <?php echo $text[$i++]; ?>
-          </h5>
-          <h5 class="py-2" style="line-height: 1.5">
-            <?php echo $text[$i++]; ?>
-          </h5>
+          <?php
+          $k7 = mysqli_fetch_array($konten7);
+          echo $k7['text'];
+          ?>
         </div>
       </div>
     </div>
@@ -325,7 +325,8 @@ $i = 0;
       <div class="faq-1">
         <!-- TITLE START -->
         <div class="d-flex justify-content-center align-items-center mt-5">
-          <h1 class="font-weight-bold text-center py-3 p-4"><?php echo $text[$i++]; ?></h1>
+          <h1 class="font-weight-bold text-center py-3 p-4"><?php $i = 0;
+                                                            echo $faqs[$i++]; ?></h1>
           <div class="kotak1"></div>
         </div>
         <!-- TITLE END -->
@@ -334,7 +335,7 @@ $i = 0;
             <div class="card-header" id="headingOne">
               <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <div class="row flex justify-content-between">
-                  <?php echo $text[$i++]; ?>
+                  <?php echo $faqs[$i++]; ?>
                   <i class="fa-solid fa-angle-down"></i>
                 </div>
               </button>
@@ -343,10 +344,10 @@ $i = 0;
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
                 <div class="isiFaqs">
-                  <?php echo $text[$i++]; ?>
+                  <?php echo $faqs[$i++]; ?>
                   <br>
                   <br>
-                  <?php echo $text[$i++]; ?>
+                  <?php echo $faqs[$i++]; ?>
                 </div>
               </div>
             </div>
@@ -356,7 +357,7 @@ $i = 0;
               <h2 class="mb-0">
                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <div class="row flex justify-content-between">
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                     <i class="fa-solid fa-angle-down"></i>
                   </div>
                 </button>
@@ -365,7 +366,7 @@ $i = 0;
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
               <div class="card-body">
                 <div class="isiFaqs">
-                  <?php echo $text[$i++]; ?>
+                  <?php echo $faqs[$i++]; ?>
                 </div>
               </div>
             </div>
@@ -375,7 +376,7 @@ $i = 0;
               <h2 class="mb-0">
                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <div class="row flex justify-content-between">
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                     <i class="fa-solid fa-angle-down"></i>
                   </div>
                 </button>
@@ -385,7 +386,7 @@ $i = 0;
               <div class="card-body">
                 <div class="isiFaqs">
                   <p>
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                   </p>
                 </div>
               </div>
@@ -396,7 +397,7 @@ $i = 0;
               <h2 class="mb-0">
                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   <div class="row flex justify-content-between">
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                     <i class="fa-solid fa-angle-down"></i>
                   </div>
                 </button>
@@ -406,7 +407,7 @@ $i = 0;
               <div class="card-body">
                 <div class="isiFaqs">
                   <p>
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                   </p>
                 </div>
               </div>
@@ -417,7 +418,7 @@ $i = 0;
               <h2 class="mb-0">
                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   <div class="row flex justify-content-between">
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                     <i class="fa-solid fa-angle-down"></i>
                   </div>
                 </button>
@@ -427,7 +428,7 @@ $i = 0;
               <div class="card-body">
                 <div class="isiFaqs">
                   <p>
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                   </p>
                 </div>
               </div>
@@ -438,7 +439,7 @@ $i = 0;
               <h2 class="mb-0">
                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                   <div class="row flex justify-content-between">
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                     <i class="fa-solid fa-angle-down"></i>
                   </div>
                 </button>
@@ -448,7 +449,7 @@ $i = 0;
               <div class="card-body">
                 <div class="isiFaqs">
                   <p>
-                    <?php echo $text[$i++]; ?>
+                    <?php echo $faqs[$i++]; ?>
                   </p>
                 </div>
               </div>
@@ -458,48 +459,33 @@ $i = 0;
       </div>
     </div>
 
-    <div class="section-full mobile-page-padding my-5" id="daftarharga">
-      <div class="container">
+    <div class="my-5 mx-auto" id="daftarharga">
+      <div class="container-fluid">
         <div class="section-content">
           <div class="d-flex justify-content-center align-items-center mt-5">
             <div class="kotak1"></div>
-            <h1 class="sep-line-one text-center font-weight-bold p-5">
+            <h1 class="sep-line-one text-center font-weight-bold p-3">
               Daftar Harga
             </h1>
             <div class="kotak1"></div>
           </div>
-
-          <div class="row justify-content-center col-md-6 mx-auto mt-2">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/image/zinnia.jpeg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/image/azalea.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/image/elegan.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+          <div class="d-flex flex-column flex-lg-row  bd-highlight mb-3 justify-content-around align-items-center">
+            <div class="p-2">
+              <img src="assets/image/zinnia.jpeg" class="d-block w-100" alt="..." width="400" height="400" />
+            </div>
+            <div class="p-2">
+              <img src="assets/image/elegan.jpg" class="d-block w-100" alt="..." width="400" height="400" />
+            </div>
+            <div class="p-2">
+              <img src="assets/image/azalea.jpg" class="d-block w-100" alt="..." width="400" height="400" />
             </div>
           </div>
         </div>
       </div>
+      <hr>
     </div>
+
+
 
     <div class="bg-form p-5" id="kontak">
       <div class="row mt-5 flex-column flex-md-row justify-content-around align-items-center">
@@ -517,30 +503,30 @@ $i = 0;
         </div>
         <div class="col-md-5 text-white p-10" style="background-image: linear-gradient(#ad8c32, #dcb64d)">
           <h2 class="text-center font-weight-bold mt-2">Kontak Kami</h2>
-          <form action="https://pesona.mbproperti.com/pakpos" id="posts" class="p-2 flex-column" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+          <form action="admin/process/pesan.php" id="posts" class="p-2 flex-column" enctype="multipart/form-data" method="post" accept-charset="utf-8">
             <input type="hidden" name="csrf_token" value="e476c0a3633e3f6890cf1782f011832e" />
             <div class="form-group">
               <label for="nama" class="font-weight-bold">Nama</label>
-              <input type="text" class="form-control" id="nama" placeholder="" />
+              <input type="text" class="form-control" id="nama" name='nama' placeholder="" />
             </div>
             <div class="form-group">
               <label for="email" class="font-weight-bold">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="" />
+              <input type="email" class="form-control" id="email" name='email' placeholder="" />
             </div>
             <div class="form-group">
               <label for="telepon" class="font-weight-bold">Telepon</label>
-              <input type="tel" class="form-control" id="telepon" placeholder="" />
+              <input type="tel" class="form-control" id="telepon" name='telepon' placeholder="" />
             </div>
             <div class="form-group">
               <label for="subjek" class="font-weight-bold">Subjek</label>
-              <input type="text" class="form-control" id="subjek" placeholder="" />
+              <input type="text" class="form-control" id="subjek" name='subjek' placeholder="" />
             </div>
             <div class="form-group">
               <label for="pesan" class="font-weight-bold">Pesan Anda</label>
-              <input type="text" class="form-control" id="pesan" placeholder="isi pesan anda disini" />
+              <input type="text" class="form-control" id="pesan" name='pesan' placeholder="isi pesan anda disini" />
             </div>
             <div class="mx-auto text-center py-3">
-              <button type="submit" class="btn btn-success">
+              <button type="submit" class="btn btn-success" name="submit">
                 <span class="font-weight-bold"> Kirim Pesan</span>
               </button>
             </div>
@@ -583,42 +569,40 @@ $i = 0;
       <!-- USEFUL LINKS -->
       <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
         <div class="flex-column justify-content-start">
-          <h5 class="font-weight-bold"><?php echo $text[$i++]; ?></h5>
-          <p>
-            <?php echo $text[$i++]; ?>
-          </p>
-          <p><?php echo $text[$i++]; ?></p>
+          <?php echo $footer[0]; ?>
           <div class="row flex justify-content-around">
             <div class="">
-              <a href="https://www.fb.com/ptmbproperti" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+              <a href="<?php $i = 0;
+                        echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
             </div>
             <div class="">
-              <a href="https://www.fb.com/ptmbproperti" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+              <a href="<?php echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
             </div>
             <div class="">
-              <a href="https://www.fb.com/ptmbproperti" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+              <a href="<?php echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
             </div>
             <div class="">
-              <a href="https://www.fb.com/ptmbproperti" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+              <a href="<?php echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
             </div>
             <div class="">
-              <a href="https://www.fb.com/ptmbproperti" target="_blank"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+              <a href="<?php echo $sosmed[$i++]; ?>" target="_blank"><i class="fa-brands fa-telegram fa-2xl"></i></a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-12 col-sm-12 pt-4">
         <div class="flex-column justify-content-start">
-          <h5 class="font-weight-bold"><?php echo $text[$i++]; ?></h5>
-          <p><?php echo $text[$i++]; ?></p>
-          <p><?php echo $text[$i++]; ?></p>
+          <?php echo $footer[1]; ?>
         </div>
       </div>
     </div>
     <div class="row mt-2">
       <div class="col-md-12">
         <p class="text-center text-white">
-          <small><?php echo $text[$i++]; ?> </small>
+          <!-- get current year -->
+          <small>
+            © <?php echo date('Y'); ?> PT. Mekar Baru Properti Indonesia.
+          </small>
         </p>
       </div>
     </div>
