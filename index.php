@@ -84,7 +84,7 @@ $i = 0;
       </div>
     </nav>
     <!-- show konten-1 -->
-    <div class="mt-5">
+    <div class="mt-5 py-3">
       <?php
       echo $konten1["text"];
       ?>
