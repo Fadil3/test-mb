@@ -459,48 +459,33 @@ $i = 0;
       </div>
     </div>
 
-    <div class="section-full mobile-page-padding my-5" id="daftarharga">
-      <div class="container">
+    <div class="my-5 mx-auto" id="daftarharga">
+      <div class="container-fluid">
         <div class="section-content">
           <div class="d-flex justify-content-center align-items-center mt-5">
             <div class="kotak1"></div>
-            <h1 class="sep-line-one text-center font-weight-bold p-5">
+            <h1 class="sep-line-one text-center font-weight-bold p-3">
               Daftar Harga
             </h1>
             <div class="kotak1"></div>
           </div>
-
-          <div class="row justify-content-center col-md-6 mx-auto mt-2">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/image/zinnia.jpeg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/image/azalea.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="carousel-item">
-                  <img src="assets/image/elegan.jpg" class="d-block w-100" alt="..." />
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+          <div class="d-flex flex-column flex-lg-row  bd-highlight mb-3 justify-content-around align-items-center">
+            <div class="p-2">
+              <img src="assets/image/zinnia.jpeg" class="d-block w-100" alt="..." width="400" height="400" />
+            </div>
+            <div class="p-2">
+              <img src="assets/image/elegan.jpg" class="d-block w-100" alt="..." width="400" height="400" />
+            </div>
+            <div class="p-2">
+              <img src="assets/image/azalea.jpg" class="d-block w-100" alt="..." width="400" height="400" />
             </div>
           </div>
         </div>
       </div>
+      <hr>
     </div>
+
+
 
     <div class="bg-form p-5" id="kontak">
       <div class="row mt-5 flex-column flex-md-row justify-content-around align-items-center">
